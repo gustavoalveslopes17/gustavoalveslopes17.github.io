@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BurgerHub — Hambúrgueres Artesanais</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho com navegação -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">🍔 BurgerHub</div>
+        <ul class="nav-links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Cardápio</a>
+            <ul class="dropdown">
+              <li><a href="#">Clássicos</a></li>
+              <li><a href="#">Smash</a></li>
+              <li><a href="#">Veganos</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        <div class="hamburger">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="main">
+      <section class="card">
+        <h2>Cheddar Bacon</h2>
+        <p>Hambúrguer artesanal com cheddar cremoso, bacon crocante e pão brioche.</p>
+        <span class="badge">Clássico</span>
+        <button class="button">Pedir agora</button>
+      </section>
+
+      <section class="card">
+        <h2>Smash da Casa</h2>
+        <p>Blend especial prensado na chapa, queijo prato e molho BurgerHub.</p>
+        <span class="badge">Smash</span>
+        <button class="button">Pedir agora</button>
+      </section>
+
+      <section class="card">
+        <h2>Veggie Supreme</h2>
+        <p>Hambúrguer de grão-de-bico, alface americana, tomate e maionese vegana.</p>
+        <span class="badge">Vegano</span>
+        <button class="button">Pedir agora</button>
+      </section>
+    </main>
+
+    <!-- Formulário de contato -->
+    <section class="form">
+      <h2>Fale com a gente</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button class="button" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <p>© 2025 BurgerHub — Todos os direitos reservados</p>
+    </footer>
+  </div>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
