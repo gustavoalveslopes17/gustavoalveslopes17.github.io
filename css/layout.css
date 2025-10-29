@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-2);
+  padding: var(--space-3);
+}
+
+.header, .footer {
+  grid-column: span 12;
+}
+
+.main {
+  grid-column: span 12;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+@media (max-width: 1200px) {
+  .main { grid-column: span 12; }
+}
+
+@media (max-width: 992px) {
+  .main { flex-direction: column; }
+}
+
+@media (max-width: 768px) {
+  .container { padding: var(--space-2); }
+}
+
+@media (max-width: 576px) {
+  .main { gap: var(--space-1); }
+}
