@@ -1,0 +1,37 @@
+@media (max-width: 1200px) {
+  .card {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    grid-column: span 12;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

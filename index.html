@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamburgueria do Gustavo</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="images/logo.png" alt="Logo" class="logo" />
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Cardápio</a>
+          <ul class="submenu">
+            <li><a href="#">Clássicos</a></li>
+            <li><a href="#">Artesanais</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <button class="hamburger">&#9776;</button>
+    </nav>
+  </header>
+
+  <main class="grid-container">
+    <section class="card">
+      <img src="images/burger1.jpg" alt="Burger 1" />
+      <h2>Cheddar Bacon</h2>
+      <span class="tag">Clássico</span>
+      <button class="btn">Pedir</button>
+    </section>
+    <section class="card">
+      <img src="images/burger2.jpg" alt="Burger 2" />
+      <h2>Veggie Supreme</h2>
+      <span class="tag">Vegetariano</span>
+      <button class="btn">Pedir</button>
+    </section>
+    <section class="card">
+      <img src="images/burger3.jpg" alt="Burger 3" />
+      <h2>Double Smash</h2>
+      <span class="tag">Artesanal</span>
+      <button class="btn">Pedir</button>
+    </section>
+  </main>
+
+  <section class="form-section">
+    <h3>Fale com a gente</h3>
+    <form>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
+      <textarea placeholder="Mensagem" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <div class="toast">Pedido realizado com sucesso!</div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Hamburgueria do Gustavo</p>
+  </footer>
+</body>
+</html>

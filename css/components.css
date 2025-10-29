@@ -1,0 +1,76 @@
+.logo {
+  width: 120px;
+}
+
+.menu {
+  display: flex;
+  gap: var(--space-2);
+  list-style: none;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: var(--color-neutral-100);
+  list-style: none;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  font-size: var(--font-lg);
+  color: var(--color-neutral-100);
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-neutral-100);
+  padding: var(--space-1) var(--space-2);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-secondary);
+}
+
+.btn:disabled {
+  background-color: var(--color-neutral-300);
+  cursor: not-allowed;
+}
+
+.tag {
+  background-color: var(--color-accent);
+  padding: var(--space-1);
+  border-radius: 4px;
+  font-size: var(--font-sm);
+}
+
+.toast {
+  position: fixed;
+  bottom: var(--space-2);
+  right: var(--space-2);
+  background-color: var(--color-secondary);
+  color: var(--color-neutral-100);
+  padding: var(--space-2);
+  border-radius: 4px;
+  display: none;
+}
+
+.form-section {
+  padding: var(--space-4);
+  background-color: var(--color-neutral-200);
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--space-2);
+  padding: var(--space-1);
+  font-size: var(--font-md);
+}

@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-light);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2);
+  background-color: var(--color-dark);
+  color: var(--color-neutral-100);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+.card {
+  grid-column: span 4;
+  background-color: var(--color-neutral-100);
+  padding: var(--space-2);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
