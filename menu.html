@@ -9,6 +9,44 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .produtos {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .grid-produtos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .produto {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: #fff;
+    }
+
+    .produto img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .produto h2 {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid-produtos {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -37,18 +75,6 @@
       <div class="produto">
         <img src="img/vegetariano.jpg" alt="Hambúrguer Vegetariano" />
         <h2>Vegetariano</h2>
-      </div>
-      <div class="produto">
-        <img src="img/combo.jpg" alt="Combo" />
-        <h2>Combo</h2>
-      </div>
-      <div class="produto">
-        <img src="img/sobremesa.jpg" alt="Sobremesa" />
-        <h2>Sobremesa</h2>
-      </div>
-      <div class="produto">
-        <img src="img/bebida.jpg" alt="Bebida" />
-        <h2>Bebida</h2>
       </div>
     </div>
   </main>
